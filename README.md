@@ -25,3 +25,4 @@ To run the app using the CLI, enter `ruby bin/composer.rb {ARG}` into the termin
 * The input is a String of alphabetical characters (no numbers or symbols). 
 * The input doesn't contain any spaces. 
 * The user enters the characters in the String in the order in which they want the sentence to be composed. 
+* The user only enters characters that will be used to build a sentence. 
