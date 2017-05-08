@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-#
+
 require_relative '../config/environment'
 
 if ARGV[0].nil?
@@ -7,7 +7,4 @@ if ARGV[0].nil?
 else
   Composer.new(ARGV[0]).compose_sentences
 end
-
-
-
 
