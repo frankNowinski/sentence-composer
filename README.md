@@ -10,9 +10,18 @@ A simple Ruby app that receives a string as input and returns all possible valid
 
 ## Test
 
-In the root directory, execute 'rspec' in the terminal. 
+In the root directory, execute `rspec` in the terminal. 
 
-## License
+## Usage
 
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+To run the app using the CLI, enter `ruby bin/composer.rb {ARG}` into the terminal. Ex: `ruby bin/composer.rb abcdefg` will output: 
+```
+["a bc def g"]
+["a bcd e fg"]
+["abcd e fg"]
+```
 
+## Assumptions 
+* The input is a String of alphabetical characters (no numbers or symbols). 
+* The input doesn't contain any spaces. 
+* The user enters the characters in the String in the order in which they want the sentence to be composed. 
