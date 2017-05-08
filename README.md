@@ -6,7 +6,7 @@ A simple Ruby app that receives a string as input and returns all possible valid
 
 1. Clone the repository
 2. `cd` into the repo
-3. Run 'bundle install' in the terminal 
+3. Run `bundle install`
 
 ## Test
 
