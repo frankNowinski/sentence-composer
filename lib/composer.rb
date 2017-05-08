@@ -5,7 +5,7 @@ class Composer
   include Dictionary
 
   def initialize(input)
-    @input     = input.split('').sort.join('')
+    @input     = input
     @sentences = []
 
     add_root_nodes
@@ -68,9 +68,14 @@ class Composer
         sentence << current_node.value
 
         if SentenceValidator.new(sentence).valid_sentence?
+          print_sentence(sentence)
           sentence.join(' ')
         end
       end
     end.flatten.compact
+  end
+
+  def print_sentence(sentence)
+    puts [sentence.join(' ')].inspect
   end
 end
